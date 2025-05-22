@@ -6,54 +6,6 @@
     <title>HomePage Teknisi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #f8f9fa;
-        }
-        .logo {
-            position: relative;
-            top: 10px;
-            left: 10px;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            background-color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 2px solid black;
-            font-weight: bold;
-        }
-        .jumbotron h1 {
-            font-size: 15 px;
-            font-weight: bold;
-            text-align: center;
-        }
-        .card {
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            padding: 10px;
-        }
-        .card img {
-            max-height: 100px;
-            object-fit: contain;
-        }
-        .status-available { color: green; }
-        .status-borrowed { color: red; }
-        .badge-custom { background-color: #1e90ff; color: #fff; border-radius: 8px; padding: 2px 5px; }
-        h5 { 
-            font-size: 8px; 
-        }
-        .section-title {
-            text-align: center;
-            font-size: 1rem;
-            font-weight: bold;
-            margin: 20px 0 10px;
-            color: #555;
-        }
-        button { width: 100%; padding: 10px; font-weight: bold; }
-    </style>
 </head>
 
 <body>
