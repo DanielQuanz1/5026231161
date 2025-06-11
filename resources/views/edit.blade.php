@@ -1,5 +1,6 @@
-<!DOCTYPE html>
-<html>
+@extends('template')
+
+@section('content')
 
 <head>
     <title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
@@ -31,4 +32,4 @@
 
 </body>
 
-</html>
+@endsection

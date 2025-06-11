@@ -1,4 +1,4 @@
-@include('template')
+@extends('template')
 
 @section('content')
 <h3>Data Pegawai</h3>
@@ -39,8 +39,6 @@
             </tr>
         @endforeach
     </table>
-
-
 </body>
-
-</html>
+ {{ $pegawai->links() }}
+@endsection

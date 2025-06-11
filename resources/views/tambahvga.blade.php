@@ -3,56 +3,55 @@
 @section('content')
 
 <head>
-    <title>Tutorial Membuat CRUD Pada Laravel - www.malasngoding.com</title>
+    <title>Tambah VGA</title>
 </head>
 
 <body>
 
-    <h2><a href="https://www.malasngoding.com">www.malasngoding.com</a></h2>
-    <h3>Data Pegawai</h3>
+    <h3>Data VGA</h3>
 
-    <a href="/pegawai"> Kembali</a>
+    <a href="/vga"> Kembali</a>
 
     <br />
     <br />
     {{-- action mengarah ke pegawai/store untuk dilakukan routing --}}
-    <form action="/pegawai/store" method="post">
+    <form action="/vga/store" method="post">
         {{ csrf_field() }}
         <div class="row">
             <div class="col-2">
-                 <label class="control-label">Nama </label>
+                 <label class="control-label">Merk VGA </label>
             </div>
             <div class="col-6">
             </div>
         </div>
-        <input type="text" name="nama" required="required"> <br />
+        <input type="text" name="merkVGA" required="required"> <br />
 
         <div class="row">
             <div class="col-2">
-                 <label class="control-label">Jabatan </label>
+                 <label class="control-label">Harga VGA </label>
             </div>
             <div class="col-6">
             </div>
         </div>
-        <input type="text" name="jabatan" required="required"> <br />
+        <input type="text" name="hargaVGA" required="required"> <br />
 
         <div class="row">
             <div class="col-2">
-                 <label class="control-label">Umur </label>
+                 <label class="control-label">Tersedia </label>
             </div>
             <div class="col-6">
             </div>
         </div>
-        <input type="number" name="umur" required="required"> <br />
+        <input type="number" name="tersedia" required="required"> <br />
 
         <div class="row">
             <div class="col-2">
-                 <label class="control-label">Alamat </label>
+                 <label class="control-label">Berat </label>
             </div>
             <div class="col-6">
             </div>
         </div>
-        <textarea name="alamat" required="required"></textarea> <br />
+        <textarea name="berat" required="required"></textarea> <br />
 
 
         <input type="submit" value="Simpan Data">

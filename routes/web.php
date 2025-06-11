@@ -5,6 +5,7 @@ use App\Http\Controllers\DosenController;
 use App\Http\Controllers\PegawaiController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
+use App\Http\Controllers\VGADBController;
 
 
 // import java.io;
@@ -92,4 +93,15 @@ Route::get('/pegawai/edit/{id}',[PegawaiDBController::class, 'edit']);
 Route::post('/pegawai/update',[PegawaiDBController::class, 'update']);
 Route::get('/pegawai/hapus/{id}', [PegawaiDBController::class, 'hapus']);
 //tambahan baru
-Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+//Route::get('/pegawai/cari', [PegawaiDBController::class, 'cari']);
+
+
+//route VGADB
+Route::get('/vga', [VGADBController::class, 'index']);
+Route::get('/vga/tambah', [VGADBController::class, 'tambah']);
+Route::post('/vga/store', [VGADBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
+Route::get('/vga/edit/{id}',[VGADBController::class, 'edit']);
+Route::post('/vga/update',[VGADBController::class, 'update']);
+Route::get('/vga/hapus/{id}', [VGADBController::class, 'hapus']);
+//tambahan cari
+Route::get('/vga/cari', [VGADBController::class, 'cari']);
