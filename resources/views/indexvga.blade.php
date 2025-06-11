@@ -23,7 +23,7 @@
             <th>Merk VGA</th>
             <th>Harga VGA</th>
             <th>Tersedia</th>
-            <th>Berat</th>
+            <th>Berat(kg)</th>
             <th>Opsi</th>
         </tr>
         @foreach ($vga as $p)
