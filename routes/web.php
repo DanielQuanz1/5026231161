@@ -7,6 +7,7 @@ use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\VGADBController;
 use App\Http\Controllers\KaryawanDBController;
+use App\Http\Controllers\PageCounterDBController;
 
 // import java.io;
 
@@ -113,3 +114,6 @@ Route::post('/karyawan/store', [KaryawanDBController::class, 'store']); //jika f
 Route::get('/karyawan/edit/{id}',[KaryawanDBController::class, 'edit']);
 Route::post('/karyawan/update',[KaryawanDBController::class, 'update']);
 Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapus']);
+
+//
+Route::get('/pagecounter', [PageCounterDBController::class,'indexpage']);

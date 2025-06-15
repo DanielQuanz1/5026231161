@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Muhammad Daniel Alfarisi : 5026231161</title>
+    <title>@yield('title', 'Muhammad Daniel Alfarisi : 5026231161')</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -51,7 +51,14 @@
             font-weight: 500;
             transition: background-color 0.3s ease;
         }
+        .navbar .container {
+            display: flex;
+            justify-content: center;
+        }
 
+        .navbar-nav {
+            flex-direction: row;
+        }
         .navbar-nav .nav-link:hover {
             background-color: #002147;
             color: white !important;
@@ -126,25 +133,25 @@
         <div class="container">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Front End</a>
+                    <a class="nav-link" href="/frontend">Front End</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/pegawai">Pegawai</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tugas CRUD</a>
+                    <a class="nav-link" href="/vga">Tugas CRUD</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">EAS</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Latihan 1</a>
+                    <a class="nav-link" href="/pagecounter">Latihan 1</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Latihan 2</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Latihan 3</a>
+                    <a class="nav-link" href="/karyawan">Latihan 3</a>
                 </li>
             </ul>
         </div>
