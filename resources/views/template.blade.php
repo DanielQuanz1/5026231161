@@ -142,7 +142,7 @@
                     <a class="nav-link" href="/vga">Tugas CRUD</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">EAS</a>
+                    <a class="nav-link" href="/eas">EAS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="/pagecounter">Latihan 1</a>

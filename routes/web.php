@@ -8,6 +8,7 @@ use App\Http\Controllers\PegawaiDBController;
 use App\Http\Controllers\VGADBController;
 use App\Http\Controllers\KaryawanDBController;
 use App\Http\Controllers\PageCounterDBController;
+use App\Http\Controllers\NilaiDBController;
 
 // import java.io;
 
@@ -107,7 +108,7 @@ Route::get('/vga/hapus/{id}', [VGADBController::class, 'hapus']);
 //tambahan cari
 Route::get('/vga/cari', [VGADBController::class, 'cari']);
 
-//route VGADB
+//route Karyawan
 Route::get('/karyawan', [KaryawanDBController::class, 'index']);
 Route::get('/karyawan/tambah', [KaryawanDBController::class, 'tambah']);
 Route::post('/karyawan/store', [KaryawanDBController::class, 'store']); //jika form dikirim, route ini akan dijalankan
@@ -117,3 +118,7 @@ Route::get('/karyawan/hapus/{id}', [KaryawanDBController::class, 'hapus']);
 
 //
 Route::get('/pagecounter', [PageCounterDBController::class,'indexpage']);
+
+//route Nilai
+Route::get('/eas', [NilaiDBController::class,'index']);
+Route::get('/eas/tambah', [NilaiDBController::class, 'tambah']);
